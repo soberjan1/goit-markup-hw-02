@@ -1,7 +1,8 @@
 :root {
   --accent-color: #404bbf;
-  --primary-text-color: #434455;
-  --secondary-text-color: #2e2f42;
+  --primary-color: #434455;
+  --secondary-color: #2e2f42;
+  --basic-white-color: #ffffff;
 }
 .list {
   list-style: none;
@@ -13,14 +14,14 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #434455;
+  color: var(--primary-color);
+  background-color: var(--basic-white-color);
+  font-size: 16px;
 }
 
 /* ============= КОМПОНЕНТЫ ============*/
 
-.first-title-component {
-  font-style: normal;
-  font-weight: 700;
+.section-title {
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
@@ -28,22 +29,20 @@ body {
   text-transform: capitalize;
 }
 
-.second-title-component {
+.section-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 
-  color: var(--secondary-text-color);
+  color: var(--secondary-color);
 }
 
-.description-component {
-  font-weight: 400;
-  font-size: 16px;
+.section-description {
   line-height: 1.5;
   letter-spacing: 0.02em;
 
-  color: var(--primary-text-color);
+  color: var(--primary-color);
 }
 
 /* ============= /КОМПОНЕНТЫ ============*/
@@ -51,11 +50,6 @@ body {
 /* ============= ШАПКА-САЙТА ============*/
 
 .logo-spn {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-
   color: #4d5ae5;
 }
 
@@ -64,17 +58,17 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
+  letter-spacing: 0.03em;
 
-  color: var(--secondary-text-color);
+  color: var(--secondary-color);
 }
 
 .menu-link {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 
-  color: var(--secondary-text-color);
+  color: var(--secondary-color);
 }
 
 .menu-link:hover,
@@ -82,39 +76,25 @@ body {
   color: var(--accent-color);
 }
 
-.contact-mail {
+.contact-link {
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 
-  color: var(--primary-text-color);
+  color: var(--primary-color);
 }
 
-.contact-mail:hover,
-.contact-mail:focus {
-  color: var(--accent-color);
-}
-
-.contact-phone-number {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
-  color: #434455;
-}
-
-.contact-phone-number:hover,
-.contact-phone-number:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-color);
 }
 
 /* ============= /ШАПКА-САЙТА ============*/
 
 /* ============= ГЕРОЙ ============= */
+.hero {
+  background-color: var(--secondary-color);
+}
 
 .hero-title {
   font-weight: 700;
@@ -123,8 +103,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
 
-  /* !!потом сделаю белым!! */
-  color: black;
+  color: var(--basic-white-color);
 }
 
 .modal-btn {
@@ -160,27 +139,30 @@ body {
 
 /* ============= ФУТУЕР =============*/
 
+.footer { 
+  background-color: var(--secondary-color);
+}
+
 .logo-footer {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.2;
 
-  color: var(--secondary-text-color);
+  color: #F4F4FD;
 }
 
 .logo-spn-footer {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
 
-  color: #4d5ae5;
+  color: #4D5AE5;
+}
+
+.footer-description { 
+  color: #E7E9FC;
 }
 /* ============= /ФУТУЕР =============*/
 
 /* ========== СТИЛИ ДЛЯ ПОРТФОЛИО ========== */
-
 
 /* ============= DIV-MENU =============== */
 
@@ -199,12 +181,10 @@ body {
 
 .menu-btn:hover,
 .menu-btn:focus {
-   background-color: var(--accent-color);
-   color: #ffffff;
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 /* ============= /DIV-MENU =============== */
 
-
 /* ============= SECTION-PORTFOLIO ============ */
-

@@ -139,7 +139,7 @@ body {
 
 /* ============= ФУТУЕР =============*/
 
-.footer { 
+.footer {
   background-color: var(--secondary-color);
 }
 
@@ -149,16 +149,17 @@ body {
   font-size: 18px;
   line-height: 1.2;
 
-  color: #F4F4FD;
+  color: #f4f4fd;
 }
 
 .logo-spn-footer {
-
-  color: #4D5AE5;
+  color: #4d5ae5;
 }
 
-.footer-description { 
-  color: #E7E9FC;
+.footer-description {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #e7e9fc;
 }
 /* ============= /ФУТУЕР =============*/
 
